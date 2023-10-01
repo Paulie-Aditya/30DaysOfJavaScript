@@ -3,13 +3,11 @@ function convert(){
     to_convert = parseFloat(to_convert)
     let x = document.getElementById("x").value;
     let y = document.getElementById("y").value;
-    
-    // Validate provided inputs
-    if(x==y || x<2 || y<2 || isNaN(to_convert)){
+
+    if (x<2 || y<2 || x>10 || y>10 || isNaN(to_convert)){
         alert("HUH!? -_-");
         return 0;
     }
-    
     // Organising results
     let res;
     if(x==10){
